@@ -1,0 +1,309 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+html {font-size: 62.5%;}
+
+@font-face {
+    font-family: fuentelocal;
+    src: url(../fuente/Gotham-Font/Gotham-Light.otf);
+}
+.fondo{
+    background-image: url(../multimedia/fondo3.jpg);
+    background-size: repeat;
+}
+.contenedorPrincipal{
+    
+    font-family: fuentelocal, sans-serif;
+    
+    
+  }
+
+  header{
+    font-size: 1.5rem;
+    
+     
+}
+
+.encabezado{
+    text-align: center;
+width: 90%;
+ margin: auto;
+
+}
+
+.logo{    
+    height: 200px;
+    margin-top: 35px;
+    }
+
+.titulos{
+    font-size: auto;
+    text-align: center;
+    font-weight: bolder;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin-top: 5px;
+    }
+
+
+.titulos h2{
+    font-size: 2em;
+}
+
+.titulos h3{
+    font-size: 1.5em;
+}
+
+
+
+
+.construccion{height: 400px;}
+
+
+
+
+/* Texto del index */
+
+.textocentrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-style: unset;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(5, 5, 5, 0.356);
+    
+}
+.img1{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.img2{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.img3{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.mainindex{
+    height: 70vh;
+    display: grid;
+    grid-template-columns:2fr ;
+    grid-template-rows:repeat(3, 33%) ;
+    gap: 1rem;
+margin-top: 10px;
+margin-bottom: 20px;} 
+
+.mainindex div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+
+footer{
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    color: antiquewhite;
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer a {
+    font-size: 1.5em;
+}
+
+footer h3{
+    margin-left: 15px;
+}
+
+footer img{
+    height: 20px;
+}
+
+footer a {
+    margin-right: 15px;
+}
+
+.construccion{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.construccion img{
+    max-width: 60%;
+  height: auto;
+}
+
+.formulario{
+    display: grid;
+    justify-content: center;
+}
+
+.areatexto{
+    width: auto;
+}
+
+.titulopag{
+    
+    font-size: 3em;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.somos{
+    background-color: #d1dee4;
+    font-size: 20px;
+    width: auto;
+    height: 500px;
+    overflow: auto;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.somos img{
+    max-width:400px;
+}
+
+/* menu Comprá solidario */
+
+.contenedorCompra{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+
+}
+
+.compras{
+    display: grid;
+    grid-template-areas: 
+    "img texto"
+    "img texto"
+    "btn btn";
+
+    width: 400px;
+    height: 250px;
+    margin: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgb(189, 183, 194);
+    text-align: center;
+    color: beige;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;  
+    border-bottom-right-radius: 100px; 
+}
+.compras img{
+    grid-area: img;
+    border-top-left-radius: 15px;
+}
+
+.compras p{
+    grid-area: texto;
+    margin-top: 20px;
+}
+
+.compras a{
+    grid-area: btn;
+} 
+
+.compras button{
+    width: 100px;
+border-radius: 15px;
+box-shadow: 3px 3px 3px;
+}
+
+/* menu compra solidaria */
+
+
+@media screen and (min-width:600px){
+    
+    .contenedorCompra{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+}
+
+    .textocentrado{
+        font-size: 3rem;
+    }
+    .mainindex{
+        grid-template-columns:repeat(2,1fr) ;
+        grid-template-rows: repeat(2, 50%) ;}
+    
+    .titulos{
+        font-size: 1.5em;
+    }
+    .img1 .img2{
+        grid-row: span 1;
+
+    }
+    .img3{
+        grid-column: span 2;
+    }
+    ;
+}
+
+@media screen and (min-width:1024px){
+    
+    .contenedorCompra{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+}
+    
+    
+    .contenedorPrincipal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+         width: 100%;
+        height: 250px; 
+      }
+      
+      .logo {
+        flex: 1;
+      }
+      
+      .logo img {
+        display:inline-block
+      }
+      
+      .titulos {
+        display: inline-block;
+
+      }
+      }
+   
+h2 h3{
+    margin: 0;
+}
+
