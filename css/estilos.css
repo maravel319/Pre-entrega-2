@@ -115,6 +115,11 @@ a{
 margin-top: 10px;
 margin-bottom: 20px;} 
 
+.mainindex a{
+    text-decoration: none;
+
+}
+
 .mainindex div img{
     height: 100%;
     width: 100%;
@@ -148,6 +153,8 @@ footer img{
 footer a {
     margin-right: 15px;
 }
+
+
 
 .construccion{
    display: flex;
