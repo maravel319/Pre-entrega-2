@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: fuentelocal;
+  src: url(../fuente/Gotham-Font/Gotham-Light.otf);
+}
+.fondo {
+  background-image: url(../multimedia/fondo3.jpg);
+  background-size: repeat;
+}
+
+.contenedorPrincipal {
+  font-family: fuentelocal, sans-serif;
+}
+
+.construccion {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.construccion img {
+  max-width: 60%;
+  height: auto;
+}
+
+h2 h3 {
+  margin: 0;
+}
+
+.navbar-dark {
+  background-color: tomato;
+}
+
+.bg-dark {
+  background-color: tomato;
+}
+
+/* 
+menu
+navbar-dark y bg-dark */
+footer {
+  background-color: rgb(7, 7, 7);
+  display: inline-block;
+  width: 100%;
+  color: antiquewhite;
+  align-items: baseline;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 1px;
+}
+footer a {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+footer h3 {
+  margin-left: 15px;
+}
+footer img {
+  height: 20px;
+}
+
+.contenedorPrincipal {
+  background-color: rgba(233, 229, 236, 0.459);
+}
+
+header {
+  font-size: 1.5rem;
+}
+
+.encabezado {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  height: 200px;
+  margin-top: 35px;
+  transition-duration: 2.5s;
+}
+.logo:hover {
+  transform: rotateX(360deg);
+}
+
+.titulos {
+  font-size: auto;
+  text-align: center;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 5px;
+}
+.titulos h2 {
+  font-size: 2em;
+}
+.titulos h3 {
+  font-size: 1.5em;
+}
+
+.textocentrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-style: unset;
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(5, 5, 5, 0.356);
+  transition-duration: 2s;
+}
+.textocentrado:hover {
+  font-size: large;
+}
+
+.mainindex {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(3, 33%);
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+.mainindex a {
+  text-decoration: none;
+}
+.mainindex a div {
+  margin-top: 0;
+}
+
+.mainindex div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img1 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.img1 a {
+  color: black;
+  text-decoration: none;
+}
+
+.img2 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.img2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.img3 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.img3 a {
+  color: black;
+  text-decoration: none;
+}
+
+.contenedorCompra {
+  background-color: #4DFF94;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  justify-content: space-evenly;
+}
+
+.compras {
+  display: grid;
+  grid-template-areas: "img texto" "img texto" "btn btn";
+  width: 500px;
+  height: 250px;
+  margin: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 3px 3px 3px;
+  background-color: rgb(189, 183, 194);
+  text-align: center;
+  color: #006529;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 100px;
+}
+.compras img {
+  grid-area: img;
+  border-top-left-radius: 15px;
+}
+
+.compras p {
+  grid-area: texto;
+  text-align: center;
+  align-self: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.compras a {
+  grid-area: btn;
+}
+
+.compras button {
+  width: 100px;
+  box-shadow: 3px 3px 3px;
+  border-radius: 20px;
+}
+
+.titulopag {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* 
+En _sumate tienes img con border-top-left-radius */
+.formulario {
+  display: grid;
+  justify-content: center;
+}
+
+.areatexto {
+  width: auto;
+}
+
+.somos {
+  background-color: #d1dee4;
+  font-size: 20px;
+  width: auto;
+  height: 500px;
+  overflow: auto;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+.somos img {
+  max-width: 400px;
+}
+
+.fondito {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(233, 229, 236, 0.459);
+  background-color: #4DFF94;
+}
+
+.wikiInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 20px;
+  background: rgb(189, 183, 194);
+  width: auto;
+  margin: 20px;
+}
+.wikiInfo p {
+  margin: 15px;
+  color: #006529;
+}
+.wikiInfo img {
+  margin: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  .contenedorCompra {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+  .textocentrado {
+    font-size: 3rem;
+  }
+  .mainindex {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%);
+  }
+  .titulos {
+    font-size: 1.5em;
+  }
+  .img1 .img2 {
+    grid-row: span 1;
+  }
+  .img3 {
+    grid-column: span 2;
+  }
+  .wikiInfo {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contenedorCompra {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 1fr;
+  }
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 250px;
+  }
+  .encabezado .logo {
+    flex: 1;
+  }
+  .encabezado .logo img display:inline-block .titulos {
+    display: inline-block;
+  }
+  .encabezado .wikiInfo {
+    width: 900px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

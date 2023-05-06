@@ -1,0 +1,69 @@
+@media screen and (min-width:600px){
+    
+    .contenedorCompra{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+}
+
+    .textocentrado{
+        font-size: 3rem;
+    }
+    .mainindex{
+        grid-template-columns:repeat(2,1fr) ;
+        grid-template-rows: repeat(2, 50%) ;}
+    
+    .titulos{
+        font-size: 1.5em;
+    }
+    .img1 .img2{
+        grid-row: span 1;
+
+    }
+    .img3{
+        grid-column: span 2;
+    }
+    
+    .wikiInfo{
+        width: 600px;
+    }
+
+
+
+    ;
+}
+
+@media screen and (min-width:1024px){
+    
+    .contenedorCompra{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+}
+    
+    
+    .encabezado {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        height: 250px; 
+        .logo {
+        flex: 1;
+        img {
+        display:inline-block
+        .titulos {
+        display: inline-block;
+    }
+    }
+    }
+
+
+    .wikiInfo{
+        width: 900px;
+    }
+    }
+    }
+
+
+    

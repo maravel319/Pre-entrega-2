@@ -1,0 +1,61 @@
+.contenedorCompra{
+    background-color: $colorcuar;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+
+}
+
+.compras{
+    display: grid;
+    grid-template-areas: 
+    "img texto"
+    "img texto"
+    "btn btn";
+    width: 500px;
+    height: 250px;
+    margin: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 3px 3px 3px;
+    background-color:$colorsec;
+    text-align: center;
+    color: $fontcolorsec;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;  
+    border-bottom-right-radius: 100px; 
+    img{
+    grid-area: img;
+    border-top-left-radius: 15px;
+
+    }
+}    
+    .compras p{
+    grid-area: texto;
+    text-align: center;
+    align-self: center;
+    margin-right: 20px; 
+    margin-left: 20px;   
+}
+    
+    .compras a{
+    grid-area: btn;}
+    
+    .compras button{
+    width: 100px;
+    box-shadow: 3px 3px 3px;
+    border-radius: 20px;
+}
+
+.titulopag{
+    
+    font-size: 3em;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+/* 
+En _sumate tienes img con border-top-left-radius */

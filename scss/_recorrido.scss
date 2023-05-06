@@ -1,0 +1,26 @@
+
+
+.fondito{
+    display: flex;
+    justify-content: center;
+    background-color: $colorter;
+    background-color: $colorcuar
+}
+
+
+
+.wikiInfo{
+    @include flex;
+    width: auto;
+    margin: 20px;
+    p{
+        margin: 15px;
+        color: $fontcolorsec;
+    }
+    img{
+        margin: 15px;
+    }
+    }
+
+
+

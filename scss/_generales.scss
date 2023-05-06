@@ -1,0 +1,45 @@
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+html {font-size: 62.5%;}
+
+@font-face {
+    font-family: fuentelocal;
+    src: url(../fuente/Gotham-Font/Gotham-Light.otf);
+}
+.fondo{
+    background-image: url(../multimedia/fondo3.jpg);
+    background-size: repeat;
+}
+.contenedorPrincipal{
+    
+    font-family: fuentelocal, sans-serif;    
+}
+
+.construccion{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        max-width: 60%;
+        height: auto;
+    } 
+}
+
+h2 h3{
+    margin: 0;
+}
+
+
+.navbar-dark{
+    background-color: tomato;
+}
+.bg-dark{
+    background-color: tomato;
+}
+/* 
+menu
+navbar-dark y bg-dark */
