@@ -90,13 +90,7 @@
                 </li>
               </ul>
 
-              <!-- Sebastian, este frame de Bootstrap venia con un buscador. Lo anulé para mi página.-->
-
-              <!-- <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Buscar</button>
-                      </form> -->
-            </div>
+              </div>
           </div>
         </div>
       </nav>
@@ -107,30 +101,37 @@
         <section>
             <h1 class="titulopag">Dejanos tu mensaje</h1>
 
-            <form class="formulario" action="" method="" enctype=""> <!-- para que srve?? -->
+            <form class="formulario" action="" method="" enctype=""> 
 
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input  type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ana">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+                <input  type="text" class="form-control" id="exampleFormControlInput1" placeholder="Iraola">
+              
+              </div>
+              
+              
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Te leemos</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="presentate y comentanos tu propuesta/consulta"  rows="18"></textarea>
+              </div>
 
-                <div>
-                    <label class="nombreform" for="nombre"> Tu nombre </label>
-                    <input type="text">
                 </div>
-
-                <div>
-                    <label for="correo"> Tu mail</label>
-                    <input type="email" name="correo" id="">
-                </div>
-                <div>
-                    <label for="edad">Que edad tenes</label>
-                    <input type="number" name="" id="">
-                </div>
-                <div>
+                <div class="mb-3">
                     <label for="choice">Algo más sobre vos: </label>
                     <input type="radio" name="choice" value="no viaja"> Quiero viajar
                     <input type="radio" name="choice" value="viaja"> Soy viajero
                     <input type="radio" name="choice" value="empresa"> Soy empresa
                 </div>
 
-                <div>
+                <div class="mb-3">
                     <label for="provincia">¿De donde nos escribis?</label>
                     <select name=slist> <!-- script que saqué de página web -->
                         <script language="javascript">
@@ -141,22 +142,14 @@
                     </select>
 
                 </div>
-                <div class="areatexto">
-                    <label for="texto">Dejanos tu mensaje</label>
-                    <textarea name="mensaje" id="" cols="60" rows="10"></textarea>
-                </div>
-
-                <div>
+                <div class="mb-3">
                     <label for="ENVIAR"> </label>
                     <input type="submit" value="Listo, enviar">
                 </div>
 
 
             </form>
-        </section>
-
-
-
+        
     </main>
 
     <footer>
