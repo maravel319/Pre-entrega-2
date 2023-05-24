@@ -37,17 +37,6 @@ h2 h3 {
   margin: 0;
 }
 
-.navbar-dark {
-  background-color: tomato;
-}
-
-.bg-dark {
-  background-color: tomato;
-}
-
-/* 
-menu
-navbar-dark y bg-dark */
 footer {
   background-color: rgb(7, 7, 7);
   display: inline-block;
@@ -57,6 +46,7 @@ footer {
   text-align: center;
   justify-content: space-between;
   padding-top: 1px;
+  padding-bottom: 5px;
 }
 footer a {
   font-size: 1.5em;
@@ -185,7 +175,7 @@ header {
 .compras {
   display: grid;
   grid-template-areas: "img texto" "img texto" "btn btn";
-  width: 500px;
+  width: 375px;
   height: 250px;
   margin: 15px;
   margin-left: 10px;
@@ -228,15 +218,17 @@ header {
   margin-bottom: 25px;
 }
 
-/* 
-En _sumate tienes img con border-top-left-radius */
 .formulario {
-  display: grid;
-  justify-content: center;
+  display: block;
+  margin: 10px;
 }
 
 .areatexto {
   width: auto;
+}
+
+.form-label {
+  font-size: 15px;
 }
 
 .somos {
@@ -280,6 +272,12 @@ En _sumate tienes img con border-top-left-radius */
   margin: 15px;
 }
 
+.menuRegion {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+}
+
 @media screen and (min-width: 600px) {
   .contenedorCompra {
     grid-template-columns: auto;
@@ -311,6 +309,9 @@ En _sumate tienes img con border-top-left-radius */
     grid-template-columns: auto auto;
     grid-template-rows: 1fr 1fr;
   }
+  .compras {
+    width: 500px;
+  }
   .encabezado {
     display: flex;
     flex-direction: row;
@@ -327,6 +328,10 @@ En _sumate tienes img con border-top-left-radius */
   }
   .encabezado .wikiInfo {
     width: 900px;
+  }
+  .formulario {
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 

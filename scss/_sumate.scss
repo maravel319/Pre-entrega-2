@@ -13,7 +13,7 @@
     "img texto"
     "img texto"
     "btn btn";
-    width: 500px;
+    width: 375px;
     height: 250px;
     margin: 15px;
     margin-left: 10px;
@@ -26,8 +26,8 @@
     border-top-left-radius: 15px;  
     border-bottom-right-radius: 100px; 
     img{
-    grid-area: img;
-    border-top-left-radius: 15px;
+        grid-area: img;
+        border-top-left-radius: 15px;
 
     }
 }    
@@ -56,6 +56,3 @@
     margin-bottom: 25px;
 }
 
-
-/* 
-En _sumate tienes img con border-top-left-radius */
